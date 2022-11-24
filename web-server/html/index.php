@@ -21,6 +21,7 @@
         } else {
             echo '<span class="text-success">Підключення з API-сервером працює.</span> ';
             $students = load_students($server);
+            echo 'Зареєстровані на API-сервері студенти: ' . implode(', ', $students);
         }
     ?>
   </body>
