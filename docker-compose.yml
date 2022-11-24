@@ -1,0 +1,7 @@
+networks:
+  lab7-net:
+    driver: bridge
+
+services:
+  # Вам необіхідно описати всі сервіси відповідно до таблиці завдання лабораторніої роботи та специфікації на веб-сайті Docker:
+  # https://docs.docker.com/compose/compose-file/
