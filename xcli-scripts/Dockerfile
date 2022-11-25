@@ -8,6 +8,7 @@ WORKDIR /
 COPY scripts scripts
 
 WORKDIR /scripts
+RUN find /scripts -type f -exec sed 's/^M$//' {} \;
 RUN find /scripts -type f -exec chmod +x {} \;
 
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/scripts
