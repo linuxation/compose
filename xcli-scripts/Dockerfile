@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM linuxation/ostamp:latest
+FROM ubuntu:latest
 RUN apt-get update
 RUN apt-get install -y iproute2 net-tools iputils-ping curl jq
 
